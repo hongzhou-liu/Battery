@@ -37,7 +37,7 @@ def analyze(device,date1,date2):
 	url = "https://parkhub.loggly.com/apiv2/events?q=json.devicename:*_"+device+"_* and json.rawlogmessage:\"iOS Battery's current percentage:*\"&from="+date1+".000-06:00&until="+date2+".000-06:00&size=1000"
 	payload = {}
 	headers = {
-	  'Authorization': 'Bearer c64c8ddc-a078-458f-acae-055531ac1c01'
+	  'Authorization': 'Bearer 9792a0b2-50e1-4f7c-ba86-8aac909b1270'
 	}
 
 	response = requests.request("GET", url, data=payload, headers=headers)
